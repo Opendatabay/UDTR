@@ -1,11 +1,24 @@
+"use client";
+import { useEffect, useRef } from "react";
 import styles from "./Hero.module.css";
-import BadgeShowcase from "@/components/BadgeShowcase/BadgeShowcase";
 
 export default function Hero() {
+  const bgRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (bgRef.current) {
+        bgRef.current.style.transform = `translateY(${window.scrollY * 0.22}px)`;
+      }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <section className={styles.section} id="get-started">
+      <div ref={bgRef} className={styles.bg} />
       <div className={styles.container}>
-        <BadgeShowcase />
         <h1 className={styles.headline}>
           Know exactly how much to
           <br />

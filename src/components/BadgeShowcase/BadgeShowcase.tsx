@@ -11,25 +11,27 @@ function rnd(set: string) {
 
 export default function BadgeShowcase() {
   const frameRef = useRef(0);
-  const [, tick] = useState(0);
+  const [out, setOut] = useState(TEXT); // real text on server; animation starts after mount
 
   useEffect(() => {
+    const LOCK_EVERY = 3;
+    const PAUSE = 14;
+    const CYCLE = TEXT.length * LOCK_EVERY + PAUSE;
+
     const id = setInterval(() => {
       frameRef.current++;
-      tick((n) => n + 1);
-    }, 56); // 40ms * 1.4 = 56ms (40% slower)
+      const cycle = frameRef.current % CYCLE;
+      const locked = Math.min(Math.floor(cycle / LOCK_EVERY), TEXT.length);
+      setOut(
+        TEXT.split("").map((c, i) => {
+          if (c === " ") return " ";
+          return i < locked ? c : rnd(ALPHA);
+        }).join("")
+      );
+    }, 56);
+
     return () => clearInterval(id);
   }, []);
-
-  const LOCK_EVERY = 3;
-  const PAUSE = 14;
-  const cycle = frameRef.current % (TEXT.length * LOCK_EVERY + PAUSE);
-  const locked = Math.min(Math.floor(cycle / LOCK_EVERY), TEXT.length);
-
-  const out = TEXT.split("").map((c, i) => {
-    if (c === " ") return " ";
-    return i < locked ? c : rnd(ALPHA);
-  }).join("");
 
   return <div className={styles.badge}>{out}</div>;
 }
