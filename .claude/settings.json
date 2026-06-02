@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --eslint --no-tailwind --src-dir --app --no-turbopack --import-alias \"@/*\")",
+      "Bash(npx create-next-app@latest udtr-app --typescript --eslint --no-tailwind --src-dir --app --no-turbopack --import-alias \"@/*\")",
+      "Bash(node node_modules/next/dist/bin/next build)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(pkill -f \"next/dist/bin/next\")",
+      "Bash(npx --yes playwright@latest install chromium)",
+      "Bash(node -e ' *)",
+      "Bash(npm list *)",
+      "Read(//opt/homebrew/lib/node_modules/**)",
+      "Bash(npx playwright *)"
+    ]
+  }
+}
