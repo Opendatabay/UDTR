@@ -6,7 +6,7 @@ const STEPS = [
   {
     num: "01",
     title: "AI Training Data",
-    desc: "Model quality starts with data quality. UDTR rates the provenance, labelling consistency, and representational balance of datasets before they enter your training pipeline — so you know exactly what you are teaching your models.",
+    desc: "Model quality starts with data quality. UDTR rates the provenance, labelling consistency, and representational balance of datasets before they enter your training pipeline ,  so you know exactly what you are teaching your models.",
   },
   {
     num: "02",

@@ -20,7 +20,7 @@ export default function WhyItMatters() {
           </p>
           <p className={styles.body}>
             UDTR gives every data source a score your organisation can stand
-            behind — auditable, consistent, and built on a universal standard
+            behind ,  auditable, consistent, and built on a universal standard
             that travels across teams, tools, and borders.
           </p>
           <div className={styles.rule} />

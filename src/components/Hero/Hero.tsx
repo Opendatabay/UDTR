@@ -38,10 +38,28 @@ export default function Hero() {
           </a>
         </div>
         <div className={styles.trustBar}>
-          <span className={styles.trustLabel}>Trusted by data teams at</span>
-          <div className={styles.trustLogos}>
-            {["Opendatabay", "UDQS.org", "IBNZ Developers"].map((name) => (
-              <span key={name} className={styles.trustLogo}>{name}</span>
+          <span className={styles.trustLabel}>Built for</span>
+          <div className={styles.ticker}>
+            {/* duplicated for seamless loop */}
+            {[1, 2].map((copy) => (
+              <div key={copy} className={styles.tickerTrack} aria-hidden={copy === 2}>
+                {[
+                  "AI Teams",
+                  "Researchers",
+                  "Enterprise",
+                  "Data Scientists",
+                  "Government Bodies",
+                  "Healthcare Orgs",
+                  "Financial Institutions",
+                  "Startups",
+                  "Academic Institutions",
+                  "Legal & Compliance Teams",
+                ].map((name) => (
+                  <span key={name} className={styles.trustLogo}>
+                    {name} <span className={styles.dot}>·</span>
+                  </span>
+                ))}
+              </div>
             ))}
           </div>
         </div>

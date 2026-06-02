@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import styles from "./HowItWorksV1.module.css";
 
 const STEPS = [
-  { num: "01", title: "Connect your data source", desc: "Link any data source — databases, APIs, data lakes, or third-party feeds — through our universal connector layer." },
+  { num: "01", title: "Connect your data source", desc: "Link any data source ,  databases, APIs, data lakes, or third-party feeds ,  through our universal connector layer." },
   { num: "02", title: "Automated trust analysis", desc: "UDTR's engine evaluates provenance, completeness, consistency, and freshness across every dimension of your data." },
   { num: "03", title: "Receive your Trust Rating", desc: "Get a clear, auditable score from 0–100 with a detailed breakdown so your team knows exactly where to invest confidence." },
 ];
