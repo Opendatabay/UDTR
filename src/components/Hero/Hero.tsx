@@ -28,6 +28,7 @@ export default function Hero() {
           UDTR provides a universal standard for rating the trustworthiness of
           data sources, so organisations can make confident, data-driven
           decisions without second-guessing their inputs
+
         </p>
         <div className={styles.actions}>
           <a href="#how-it-works" className={styles.primaryBtn}>

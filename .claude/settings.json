@@ -11,7 +11,16 @@
       "Bash(npm list *)",
       "Read(//opt/homebrew/lib/node_modules/**)",
       "Bash(npx playwright *)",
-      "Bash(node /tmp/pw-test/logo-screenshot.cjs)"
+      "Bash(node /tmp/pw-test/logo-screenshot.cjs)",
+      "Bash(git fetch *)",
+      "Bash(git checkout *)",
+      "Bash(git merge *)",
+      "Bash(git pull *)",
+      "Bash(git stash *)",
+      "Bash(git rebase *)",
+      "Bash(git reset *)",
+      "Bash(grep -rn '\\\\.\"$\\\\|\\\\.\">$\\\\|\\\\.,$' /Users/ibnzdevelopers/Desktop/Development/UDTR/src --include=\"*.tsx\")",
+      "Bash(grep -rn \"\\\\.$\" /Users/ibnzdevelopers/Desktop/Development/UDTR/src/components --include=\"*.tsx\" -A0)"
     ]
   }
 }
