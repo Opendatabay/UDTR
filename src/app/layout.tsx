@@ -8,7 +8,7 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "UDTR — Universal Data Trust Rating",
+  title: "UDTR, Universal Data Trust Rating",
   description:
     "UDTR provides a universal standard for rating the trustworthiness of data sources, helping organisations make confident, data-driven decisions.",
 };

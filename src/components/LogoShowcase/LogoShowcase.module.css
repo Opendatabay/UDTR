@@ -1,0 +1,69 @@
+.section {
+  padding: 5rem 2rem;
+  background: #fff;
+  border-top: 1px solid var(--color-border);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-muted);
+}
+
+.grid {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.preview .svg {
+  width: 120px;
+  height: 120px;
+  display: block;
+}
+
+.previewSmall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.previewSmall .svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.cardLabel {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.cardId {
+  color: var(--color-muted);
+}

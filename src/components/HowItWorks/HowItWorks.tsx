@@ -5,7 +5,7 @@ const steps = [
     number: "01",
     title: "Connect your data source",
     description:
-      "Link any data source — databases, APIs, data lakes, or third-party feeds — through our universal connector layer.",
+      "Link any data source, databases, APIs, data lakes, or third-party feeds, through our universal connector layer.",
   },
   {
     number: "02",
@@ -28,7 +28,7 @@ export default function HowItWorks() {
         <div className={styles.header}>
           <p className={styles.eyebrow}>How it works</p>
           <h2 className={styles.title}>
-            A rating you can act on — in three steps.
+            A rating you can act on, in three steps.
           </h2>
           <p className={styles.subtitle}>
             From raw data to an auditable trust score in minutes, not months.

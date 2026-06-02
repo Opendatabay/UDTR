@@ -29,7 +29,7 @@ export default function ParallaxV1() {
       // 0 when section just entering viewport bottom, 1 when section top hits viewport top
       const enterProgress = Math.max(0, Math.min(1, 1 - rect.top / vh));
 
-      // scale only — no independent translateY so UDTR never drifts into the subtitle
+      // scale only, no independent translateY so UDTR never drifts into the subtitle
       const scale = 0.8 + enterProgress * 0.2;
       if (textRef.current) {
         textRef.current.style.transform = `scale(${scale})`;
@@ -53,7 +53,7 @@ export default function ParallaxV1() {
         <div ref={textRef} className={styles.udtr}>UDTR</div>
         <p ref={subRef} className={styles.sub}>Universal Data Trust Rating</p>
       </div>
-      <span className={styles.label}>01 — GRID</span>
+      <span className={styles.label}>01, GRID</span>
     </section>
   );
 }
