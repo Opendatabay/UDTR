@@ -10,7 +10,8 @@
       "Bash(node -e ' *)",
       "Bash(npm list *)",
       "Read(//opt/homebrew/lib/node_modules/**)",
-      "Bash(npx playwright *)"
+      "Bash(npx playwright *)",
+      "Bash(node /tmp/pw-test/logo-screenshot.cjs)"
     ]
   }
 }
