@@ -23,7 +23,7 @@ export default function Footer() {
           <span className={styles.logoText}>UDTR</span>
         </div>
         <p className={styles.copy}>
-          © {new Date().getFullYear()} UDTR. Universal Data Trust Rating.
+          © {new Date().getFullYear()} UDTR,  Universal Data Trust Rating
         </p>
       </div>
     </footer>

@@ -3,9 +3,9 @@ import { useEffect, useRef } from "react";
 import styles from "./HowItWorksV1.module.css";
 
 const STEPS = [
-  { num: "01", title: "Connect your data source", desc: "Link any data source — databases, APIs, data lakes, or third-party feeds — through our universal connector layer." },
-  { num: "02", title: "Automated trust analysis", desc: "UDTR's engine evaluates provenance, completeness, consistency, and freshness across every dimension of your data." },
-  { num: "03", title: "Receive your Trust Rating", desc: "Get a clear, auditable score from 0–100 with a detailed breakdown so your team knows exactly where to invest confidence." },
+  { num: "01", title: "Connect your data source", desc: "Link any data source,  databases, APIs, data lakes, or third-party feeds,  through our universal connector layer" },
+  { num: "02", title: "Automated trust analysis", desc: "UDTR's engine evaluates provenance, completeness, consistency, and freshness across every dimension of your data" },
+  { num: "03", title: "Receive your Trust Rating", desc: "Get a clear, auditable score from 0–100 with a detailed breakdown so your team knows exactly where to invest confidence" },
 ];
 
 export default function HowItWorksV1() {
@@ -40,8 +40,8 @@ export default function HowItWorksV1() {
       <div className={styles.container}>
         <div className={styles.header}>
           <p className={styles.eyebrow}>How it works</p>
-          <h2 className={styles.title}>A rating you can act on, in three steps.</h2>
-          <p className={styles.sub}>From raw data to an auditable trust score in minutes, not months.</p>
+          <h2 className={styles.title}>A rating you can act on, in three steps</h2>
+          <p className={styles.sub}>From raw data to an auditable trust score in minutes, not months</p>
         </div>
         <div className={styles.steps}>
           {STEPS.map((step, i) => (
@@ -58,7 +58,7 @@ export default function HowItWorksV1() {
           ))}
         </div>
       </div>
-      <span className={styles.label}>V1 / GRID</span>
+      <span className={styles.label}>[STEPS]</span>
     </section>
   );
 }

@@ -6,17 +6,17 @@ const STEPS = [
   {
     num: "01",
     title: "AI Training Data",
-    desc: "Model quality starts with data quality. UDTR rates the provenance, labelling consistency, and representational balance of datasets before they enter your training pipeline — so you know exactly what you are teaching your models.",
+    desc: "Model quality starts with data quality,  UDTR rates the provenance, labelling consistency, and representational balance of datasets before they enter your training pipeline, so you know exactly what you are teaching your models",
   },
   {
     num: "02",
     title: "Research Data",
-    desc: "Academic and scientific datasets demand rigorous sourcing. UDTR evaluates methodology transparency, peer-review lineage, and reproducibility standards, giving institutions a defensible trust score for every dataset they publish or consume.",
+    desc: "Academic and scientific datasets demand rigorous sourcing,  UDTR evaluates methodology transparency, peer-review lineage, and reproducibility standards, giving institutions a defensible trust score for every dataset they publish or consume",
   },
   {
     num: "03",
     title: "Commercial & Market Data",
-    desc: "Financial signals, pricing feeds, and third-party market datasets carry real business risk when unverified. UDTR applies freshness, coverage, and vendor-reliability checks to give trading and analytics teams a single auditable confidence rating.",
+    desc: "Financial signals, pricing feeds, and third-party market datasets carry real business risk when unverified,  UDTR applies freshness, coverage, and vendor-reliability checks to give trading and analytics teams a single auditable confidence rating",
   },
 ];
 
@@ -62,7 +62,7 @@ export default function HowItWorksV5() {
       <div className={styles.container}>
         <div className={styles.header}>
           <p className={styles.eyebrow}>Data modalities</p>
-          <h2 className={styles.title}>Every kind of data. One universal standard.</h2>
+          <h2 className={styles.title}>Every kind of data,  one universal standard</h2>
         </div>
         <div className={styles.timeline}>
           {/* SVG vertical line */}
@@ -95,7 +95,7 @@ export default function HowItWorksV5() {
           </div>
         </div>
       </div>
-      <span className={styles.label}>DATA MODALITIES</span>
+      <span className={styles.label}>[MODALITIES]</span>
     </section>
   );
 }
