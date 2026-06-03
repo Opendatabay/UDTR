@@ -52,6 +52,16 @@
   user-select: none;
 }
 
+@media (max-width: 640px) {
+  .section {
+    height: 50vh;
+  }
+
+  .udtr {
+    font-size: 22vw;
+  }
+}
+
 .sub {
   font-size: clamp(0.75rem, 1.4vw, 1.1rem);
   font-weight: 400;
