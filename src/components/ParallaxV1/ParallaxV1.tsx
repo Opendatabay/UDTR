@@ -53,7 +53,6 @@ export default function ParallaxV1() {
         <div ref={textRef} className={styles.udtr}>UDTR</div>
         <p ref={subRef} className={styles.sub}>Universal Data Trust Rating</p>
       </div>
-      <span className={styles.label}>01, GRID</span>
     </section>
   );
 }
