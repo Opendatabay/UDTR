@@ -95,7 +95,7 @@ export default function HowItWorksV5() {
           </div>
         </div>
       </div>
-      <span className={styles.label}>DATA MODALITIES</span>
+      <span className={styles.label}>[MODALITIES]</span>
     </section>
   );
 }

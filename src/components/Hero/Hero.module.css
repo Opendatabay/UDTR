@@ -177,4 +177,8 @@
   .trustLogos {
     gap: 1rem;
   }
+
+  .ticker {
+    max-width: 320px;
+  }
 }
