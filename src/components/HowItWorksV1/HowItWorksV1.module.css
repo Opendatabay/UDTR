@@ -1,21 +1,8 @@
 .section {
   position: relative;
   padding: 7rem 2rem;
-  background: #fff;
   overflow: hidden;
-  border-top: 1px solid #e8e8e8;
-}
-
-.bg {
-  position: absolute;
-  inset: -20% 0;
-  height: 140%;
-  will-change: transform;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.055) 1px, transparent 1px);
-  background-size: 64px 64px;
-  pointer-events: none;
+  border-top: 1px solid var(--color-border);
 }
 
 .container {
@@ -49,11 +36,12 @@
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1.15;
+  color: var(--color-text);
 }
 
 .sub {
   font-size: 1rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.6;
 }
 
@@ -81,9 +69,9 @@
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.12em;
-  color: #bbb;
+  color: #888;
   padding-bottom: 1rem;
-  border-bottom: 1.5px solid #e0e0e0;
+  border-bottom: 1.5px solid var(--color-border);
 }
 
 .stepTitle {
@@ -91,11 +79,12 @@
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.3;
+  color: var(--color-text);
 }
 
 .stepDesc {
   font-size: 0.92rem;
-  color: #666;
+  color: var(--color-text-muted);
   line-height: 1.65;
 }
 
@@ -107,7 +96,7 @@
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #ccc;
+  color: #555;
 }
 
 @media (max-width: 768px) {
