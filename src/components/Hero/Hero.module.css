@@ -5,19 +5,6 @@
   overflow: hidden;
 }
 
-.bg {
-  position: absolute;
-  inset: -20% 0;
-  height: 140%;
-  will-change: transform;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.055) 1px, transparent 1px);
-  background-size: 64px 64px;
-  pointer-events: none;
-  z-index: 0;
-}
-
 
 .container {
   position: relative;
@@ -52,7 +39,7 @@
 }
 
 .accent {
-  color: var(--color-mid);
+  color: #a0a0ff;
 }
 
 .subtext {
@@ -74,8 +61,8 @@
   display: inline-flex;
   align-items: center;
   padding: 0.75rem 1.75rem;
-  background: var(--color-dark);
-  color: #fff;
+  background: #ffffff;
+  color: #0a0a0a;
   border-radius: var(--radius);
   font-weight: 600;
   font-size: 0.95rem;
@@ -83,7 +70,7 @@
 }
 
 .primaryBtn:hover {
-  background: #333;
+  background: #e8e8e8;
   transform: translateY(-1px);
 }
 
@@ -102,7 +89,7 @@
 
 .secondaryBtn:hover {
   background: var(--color-surface);
-  border-color: #bbb;
+  border-color: #666;
   transform: translateY(-1px);
 }
 
@@ -146,7 +133,7 @@
 .trustLogo {
   font-size: 0.72rem;
   font-weight: 700;
-  color: #bbb;
+  color: #707070;
   white-space: nowrap;
   padding: 0 0.15rem;
   text-transform: uppercase;
@@ -154,7 +141,7 @@
 }
 
 .dot {
-  color: #ddd;
+  color: #505050;
   margin: 0 0.6rem;
 }
 

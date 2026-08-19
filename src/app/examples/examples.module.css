@@ -1,0 +1,378 @@
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+}
+
+.section {
+  margin-bottom: 5rem;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  letter-spacing: -0.01em;
+}
+
+.preview {
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Base navbar header styles */
+.navbarMinimal,
+.navbarBold,
+.navbarCompact,
+.navbarGradient,
+.navbarDark {
+  position: relative;
+  z-index: 100;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.navbarMinimal,
+.navbarBold,
+.navbarCompact {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+}
+
+.navbarGradient {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.navbarDark {
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Version 1: Minimal Clean */
+.navMinimal {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.linksMinimal {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.linksMinimal a {
+  color: var(--color-text-muted);
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.linksMinimal a:hover {
+  color: var(--color-text);
+}
+
+/* Version 2: Bold Accent */
+.navBold {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoTextBold {
+  font-weight: 900;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+.linksBold {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.linksBold a {
+  color: var(--color-text-muted);
+  transition: color 0.15s;
+  text-decoration: none;
+}
+
+.linksBold a:hover {
+  color: var(--color-text);
+}
+
+.ctaLinkBold {
+  color: var(--color-text) !important;
+  background: var(--color-surface);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: background 0.2s;
+}
+
+.ctaLinkBold:hover {
+  background: #e8e8e8 !important;
+}
+
+/* Version 3: Compact Dense */
+.navCompact {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.linksCompact {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.linksCompact a {
+  color: var(--color-text-muted);
+  transition: color 0.15s;
+  text-decoration: none;
+}
+
+.linksCompact a:hover {
+  color: var(--color-text);
+}
+
+/* Version 4: Gradient Background */
+.navGradient {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoGradient {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.logoTextGradient {
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #0a0a0a 0%, #333333 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.linksGradient {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 0.925rem;
+}
+
+.linksGradient a {
+  color: #666666;
+  transition: color 0.15s;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.linksGradient a:hover {
+  color: var(--color-text);
+}
+
+.ctaLinkGradient {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #0a0a0a 0%, #333333 100%);
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: transform 0.2s;
+}
+
+.ctaLinkGradient:hover {
+  transform: translateY(-2px);
+}
+
+/* Version 5: Dark Mode */
+.navDark {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoDark {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.logoDark:hover {
+  opacity: 0.8;
+}
+
+.logoTextDark {
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.linksDark {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 0.925rem;
+}
+
+.linksDark a {
+  color: #b0b0b0;
+  transition: color 0.15s;
+  text-decoration: none;
+}
+
+.linksDark a:hover {
+  color: #ffffff;
+}
+
+.ctaLinkDark {
+  color: #141414 !important;
+  background: #ffffff;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: background 0.2s;
+}
+
+.ctaLinkDark:hover {
+  background: #f0f0f0 !important;
+}
+
+/* Base logo styles */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logoMark {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.logoText {
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: -0.03em;
+  color: var(--color-text);
+}
+
+.ctaLink {
+  color: var(--color-text) !important;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem 1.25rem;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .section h2 {
+    font-size: 1.25rem;
+  }
+
+  .section {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .navMinimal,
+  .navBold,
+  .navCompact,
+  .navGradient,
+  .navDark {
+    padding: 0 1.25rem;
+  }
+
+  .linksMinimal,
+  .linksBold,
+  .linksCompact,
+  .linksGradient,
+  .linksDark {
+    display: none;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header p {
+    font-size: 0.95rem;
+  }
+}
