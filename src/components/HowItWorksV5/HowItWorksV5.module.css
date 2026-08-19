@@ -1,24 +1,8 @@
 .section {
   position: relative;
   padding: 7rem 2rem;
-  background: var(--color-bg);
   overflow: hidden;
   border-top: 1px solid var(--color-border);
-}
-
-.bg {
-  position: absolute;
-  inset: -20% 0;
-  height: 140%;
-  will-change: transform;
-  /* Graph paper: major grid + minor grid */
-  background-image:
-    linear-gradient(rgba(255,255,255,0.12) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.12) 1px, transparent 1px),
-    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
-  background-size: 80px 80px, 80px 80px, 16px 16px, 16px 16px;
-  pointer-events: none;
 }
 
 .container {
