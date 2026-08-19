@@ -2,34 +2,9 @@
   position: relative;
   height: 100vh;
   overflow: hidden;
-  background: #080808;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.bg {
-  position: absolute;
-  inset: -20% 0;
-  height: 140%;
-  will-change: transform;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
-  background-size: 80px 80px;
-  background-position: center center;
-}
-
-/* stronger accent lines every 5th cell */
-.bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
-  background-size: 400px 400px;
-  background-position: center center;
 }
 
 .content {
