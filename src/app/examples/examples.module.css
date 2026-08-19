@@ -1,0 +1,148 @@
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+}
+
+.section {
+  margin-bottom: 5rem;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  letter-spacing: -0.01em;
+}
+
+.preview {
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Base navbar styles */
+.header1,
+.header2,
+.header3,
+.header4,
+.header5 {
+  position: relative;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logoMark {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.logoText {
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: -0.03em;
+  color: var(--color-text);
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 0.925rem;
+}
+
+.links a {
+  color: var(--color-text-muted);
+  transition: color 0.15s;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: var(--color-text);
+}
+
+.ctaLink {
+  color: var(--color-text) !important;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem 1.25rem;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .section h2 {
+    font-size: 1.25rem;
+  }
+
+  .section {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav {
+    padding: 0 1.25rem;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header p {
+    font-size: 0.95rem;
+  }
+}
