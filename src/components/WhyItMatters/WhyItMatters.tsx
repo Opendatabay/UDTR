@@ -29,6 +29,7 @@ export default function WhyItMatters() {
           </p>
         </div>
       </div>
+      <span className={styles.label}>[WHY IT MATTERS]</span>
     </section>
   );
 }
