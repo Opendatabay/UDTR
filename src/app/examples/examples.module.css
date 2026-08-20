@@ -376,3 +376,499 @@
     font-size: 0.95rem;
   }
 }
+
+/* Carousel Styles */
+.carouselPreview {
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+}
+
+/* Carousel 1: Horizontal Ticker */
+.carousel1 {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+.ticker1 {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.tickerTrack1 {
+  display: flex;
+  flex-shrink: 0;
+  gap: 2rem;
+  animation: scroll1 30s linear infinite;
+  white-space: nowrap;
+}
+
+.item1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  padding: 0.5rem 1rem;
+}
+
+@keyframes scroll1 {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Carousel 2: Card Stack */
+.carousel2 {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+}
+
+.card {
+  min-width: 200px;
+  padding: 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: slideUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.cardNumber {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--color-text-muted);
+}
+
+.cardText {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Carousel 3: Vertical Scroll */
+.carousel3 {
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.verticalTicker {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.verticalTrack {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  animation: scrollVertical 20s linear infinite;
+}
+
+.verticalItem {
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+}
+
+@keyframes scrollVertical {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
+}
+
+/* Carousel 4: Grid Showcase */
+.carousel4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.gridCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.gridCard:hover {
+  transform: translateY(-4px);
+  border-color: #a0a0ff;
+}
+
+.gridIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconCircle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #a0a0ff, #0a0a0a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.gridName {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.3;
+}
+
+/* Carousel 5: Spotlight */
+.carousel5 {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.spotlight {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.spotlightItem {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  animation: spotlightFade 10s ease-in-out infinite;
+}
+
+.spotlightNumber {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #a0a0ff;
+  line-height: 1;
+}
+
+.spotlightText {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-top: 0.5rem;
+}
+
+@keyframes spotlightFade {
+  0%, 100% { opacity: 0; }
+  20%, 80% { opacity: 1; }
+}
+
+/* Carousel 6: Rotating Ring */
+.carousel6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+.rotatingRing {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  animation: rotate 20s linear infinite;
+}
+
+.ringItem {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(var(--rotation));
+}
+
+.ringText {
+  display: inline-block;
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  padding: 0.75rem 1.25rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-text);
+  white-space: nowrap;
+  transform: translateY(-100px) rotate(calc(-1 * var(--rotation)));
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Carousel 7: Spinning Wheel */
+.carousel7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+.spinningWheel {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  animation: spin 15s linear infinite;
+}
+
+.wheelItem {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(calc(var(--index) * 72deg));
+}
+
+.wheelSegment {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #a0a0ff, #0f0f0f);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  text-align: center;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Carousel 8: Orbiting Items */
+.carousel8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+.orbitContainer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #a0a0ff;
+  z-index: 10;
+}
+
+.orbitItem {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: orbit 20s linear infinite;
+  animation-delay: calc(var(--index) * -2s);
+}
+
+.orbitCard {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+@keyframes orbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Carousel 9: Spinning Cube */
+.carousel9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  perspective: 1000px;
+}
+
+.cubeContainer {
+  perspective: 1000px;
+  width: 200px;
+  height: 200px;
+}
+
+.cube {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: spinCube 10s linear infinite;
+  transform-style: preserve-3d;
+}
+
+.cubeFace {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--color-text);
+  text-align: center;
+  padding: 1rem;
+}
+
+.cubeFace:nth-child(1) { transform: rotateY(0deg) translateZ(100px); }
+.cubeFace:nth-child(2) { transform: rotateY(60deg) translateZ(100px); }
+.cubeFace:nth-child(3) { transform: rotateY(120deg) translateZ(100px); }
+.cubeFace:nth-child(4) { transform: rotateY(180deg) translateZ(100px); }
+.cubeFace:nth-child(5) { transform: rotateY(240deg) translateZ(100px); }
+.cubeFace:nth-child(6) { transform: rotateY(300deg) translateZ(100px); }
+
+@keyframes spinCube {
+  from { transform: rotateY(0deg) rotateX(0deg); }
+  to { transform: rotateY(360deg) rotateX(180deg); }
+}
+
+/* Carousel 10: Radial Spinner */
+.carousel10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+.radialSpinner {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  animation: radialRotate 12s linear infinite;
+}
+
+.radialItem {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(var(--angle));
+}
+
+.radialBubble {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #a0a0ff, #1a1a1a);
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(160, 160, 255, 0.3);
+  transform: translateX(-50%) translateY(0);
+}
+
+@keyframes radialRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+/* Carousel Stack */
+.carouselStack {
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.stackItem {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transform: rotateY(90deg);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  margin-bottom: 0;
+}
+
+.stackItem:nth-child(1) { animation: stackCycle 40s steps(10, end) infinite; }
+.stackItem:nth-child(2) { animation: stackCycle 40s steps(10, end) infinite; animation-delay: -36s; }
+.stackItem:nth-child(3) { animation: stackCycle 40s steps(10, end) infinite; animation-delay: -32s; }
+.stackItem:nth-child(4) { animation: stackCycle 40s steps(10, end) infinite; animation-delay: -28s; }
+.stackItem:nth-child(5) { animation: stackCycle 40s steps(10, end) infinite; animation-delay: -24s; }
+.stackItem:nth-child(6) { animation: stackCycle 40s steps(10, end) infinite; animation-delay: -20s; }
+.stackItem:nth-child(7) { animation: stackCycle 40s steps(10, end) infinite; animation-delay: -16s; }
+.stackItem:nth-child(8) { animation: stackCycle 40s steps(10, end) infinite; animation-delay: -12s; }
+.stackItem:nth-child(9) { animation: stackCycle 40s steps(10, end) infinite; animation-delay: -8s; }
+.stackItem:nth-child(10) { animation: stackCycle 40s steps(10, end) infinite; animation-delay: -4s; }
+
+@keyframes stackCycle {
+  0%, 10% {
+    opacity: 1;
+    transform: rotateY(0deg) translateZ(0);
+    pointer-events: auto;
+    z-index: 10;
+  }
+  11%, 100% {
+    opacity: 0;
+    transform: rotateY(-90deg) translateZ(-100px);
+    pointer-events: none;
+    z-index: 0;
+  }
+}
