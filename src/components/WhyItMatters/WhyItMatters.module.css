@@ -63,6 +63,21 @@
   color: var(--color-text);
 }
 
+.label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #555;
+  display: block;
+  text-align: right;
+  margin-top: 4rem;
+  margin-bottom: -5rem;
+
+
+
+
+}
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
