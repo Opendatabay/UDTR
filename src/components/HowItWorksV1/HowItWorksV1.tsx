@@ -58,7 +58,7 @@ export default function HowItWorksV1() {
           ))}
         </div>
       </div>
-      <span className={styles.label}>[STEPS]</span>
+      <span className={styles.label}>[HOW IT WORKS]</span>
     </section>
   );
 }
