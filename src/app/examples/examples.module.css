@@ -831,6 +831,449 @@
   to { transform: rotate(-360deg); }
 }
 
+/* Footer Styles */
+.footerPreview {
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  min-height: 300px;
+}
+
+/* Footer 1: Minimal Clean */
+.footerMinimal {
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem 2rem;
+}
+
+.footerContent1 {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footerBrand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footerLogo {
+  width: 32px;
+  height: 32px;
+}
+
+.footerBrandText {
+  font-weight: 800;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.footerLinks1 {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+}
+
+.footerLinks1 a {
+  color: #b0b0b0;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 0.9rem;
+}
+
+.footerLinks1 a:hover {
+  color: #ffffff;
+}
+
+.footerCopy {
+  color: #707070;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* Footer 2: Multi-Column */
+.footerMultiCol {
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem 2rem 1.5rem;
+}
+
+.footerContent2 {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footerCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footerCol h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.footerCol a {
+  color: #b0b0b0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.footerCol a:hover {
+  color: #ffffff;
+}
+
+.footerBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.footerBottom p {
+  color: #707070;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.socialLinks a {
+  color: #b0b0b0;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+
+.socialLinks a:hover {
+  color: #ffffff;
+}
+
+/* Footer 3: Newsletter */
+.footerNewsLetter {
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem 2rem;
+}
+
+.footerContent3 {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.newsletterSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.newsletterSection h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.newsletterSection p {
+  color: #b0b0b0;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.newsLetterForm {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.newsLetterForm input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.newsLetterForm input::placeholder {
+  color: #707070;
+}
+
+.newsLetterForm button {
+  padding: 0.75rem 1.5rem;
+  background: #ffffff;
+  color: #0f0f0f;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.newsLetterForm button:hover {
+  background: #f0f0f0;
+}
+
+.footerDivider {
+  width: 1px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footerBrandBox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footerBrandBox svg {
+  width: 28px;
+  height: 28px;
+}
+
+.footerLinks3 {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footerLinks3 a {
+  color: #b0b0b0;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+
+.footerLinks3 a:hover {
+  color: #ffffff;
+}
+
+/* Footer 4: Dark Accent */
+.footerDarkAccent {
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.95) 0%, rgba(30, 30, 30, 0.95) 100%);
+  backdrop-filter: blur(10px);
+  border-top: 2px solid #a0a0ff;
+  padding: 3rem 2rem;
+}
+
+.footerContent4 {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.footerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.footerHeader h2 {
+  font-size: 1.75rem;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+}
+
+.footerHeader p {
+  color: #b0b0b0;
+  margin: 0;
+}
+
+.ctaButtonFooter {
+  padding: 0.75rem 2rem;
+  background: #a0a0ff;
+  color: #0f0f0f;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.ctaButtonFooter:hover {
+  background: #b0b0ff;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footerGrid > div h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+}
+
+.footerGrid > div a {
+  display: block;
+  color: #b0b0b0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  transition: color 0.2s;
+}
+
+.footerGrid > div a:hover {
+  color: #ffffff;
+}
+
+.footerDivider2 {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 2rem 0;
+}
+
+.footerFinance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerFinance p {
+  color: #707070;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.footerLegalLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.footerLegalLinks a {
+  color: #707070;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+
+.footerLegalLinks a:hover {
+  color: #ffffff;
+}
+
+/* Footer 5: Compact Single Row */
+.footerCompact {
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem 2rem;
+}
+
+.footerContent5 {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footerLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.footerLogoSmall {
+  width: 28px;
+  height: 28px;
+}
+
+.compactBrand {
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.year {
+  color: #707070;
+  font-size: 0.85rem;
+}
+
+.footerCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.footerCenter a {
+  color: #b0b0b0;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+
+.footerCenter a:hover {
+  color: #ffffff;
+}
+
+.footerCenter span {
+  color: #505050;
+}
+
+.footerRight {
+  flex-shrink: 0;
+}
+
+.footerBtn {
+  padding: 0.5rem 1.25rem;
+  background: #ffffff;
+  color: #0f0f0f;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.footerBtn:hover {
+  background: #f0f0f0;
+}
+
 /* Carousel Stack */
 .carouselStack {
   position: relative;
