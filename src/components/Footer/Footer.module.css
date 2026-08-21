@@ -1,48 +1,154 @@
 .footer {
-  padding: 2.5rem 2rem;
-  background: rgba(20, 20, 20, 0.95);
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.95) 0%, rgba(30, 30, 30, 0.95) 100%);
   backdrop-filter: blur(10px);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 2px solid #a0a0ff;
+  padding: 3rem 2rem;
 }
 
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.brand {
+.header {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
-.logoMark {
-  width: 28px;
-  height: 28px;
-  display: block;
+.header h2 {
+  font-size: 1.75rem;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.header p {
+  color: #b0b0b0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.ctaButton {
+  padding: 0.75rem 2rem;
+  background: #a0a0ff;
+  color: #0f0f0f;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  white-space: nowrap;
   flex-shrink: 0;
 }
 
-.logoText {
-  font-weight: 800;
-  font-size: 1rem;
-  letter-spacing: -0.02em;
-  color: var(--color-text);
+.ctaButton:hover {
+  background: #b0b0ff;
+  transform: translateY(-2px);
 }
 
-.copy {
-  font-size: 0.875rem;
-  color: var(--color-text-muted);
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 2rem;
+}
+
+.grid > div h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.01em;
+}
+
+.grid > div a {
+  display: block;
+  color: #b0b0b0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  transition: color 0.2s;
+}
+
+.grid > div a:hover {
+  color: #ffffff;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.bottom p {
+  color: #707070;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.legalLinks {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.legalLinks a {
+  color: #707070;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+
+.legalLinks a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ctaButton {
+    width: 100%;
+    text-align: center;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .legalLinks {
+    width: 100%;
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 500px) {
-  .container {
-    flex-direction: column;
-    align-items: flex-start;
+  .footer {
+    padding: 2rem 1.5rem;
+  }
+
+  .header h2 {
+    font-size: 1.25rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 }

@@ -4,17 +4,45 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <div className={styles.brand}>
-          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" className={styles.logoMark}>
-            <circle cx="32" cy="32" r="28" fill="none" stroke="#ffffff" strokeWidth="2" />
-            <circle cx="32" cy="32" r="20" fill="none" stroke="#ffffff" strokeWidth="2" />
-            <circle cx="32" cy="32" r="12" fill="#ffffff" />
-          </svg>
-          <span className={styles.logoText}>UDTR</span>
+        <div className={styles.header}>
+          <div>
+            <h2>Ready to trust your data?</h2>
+            <p>Get started with UDTR today</p>
+          </div>
+          <button className={styles.ctaButton}>Get Started</button>
         </div>
-        <p className={styles.copy}>
-          © {new Date().getFullYear()} UDTR,  Universal Data Trust Rating
-        </p>
+
+        <div className={styles.grid}>
+          <div>
+            <h4>Product</h4>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#security">Security</a>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+            <a href="#careers">Careers</a>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <a href="#docs">Docs</a>
+            <a href="#api">API</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div className={styles.divider}></div>
+
+        <div className={styles.bottom}>
+          <p>© {new Date().getFullYear()} UDTR, Inc. All rights reserved.</p>
+          <div className={styles.legalLinks}>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+            <a href="#cookies">Cookie Policy</a>
+          </div>
+        </div>
       </div>
     </footer>
   );
